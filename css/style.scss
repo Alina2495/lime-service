@@ -1,0 +1,125 @@
+$green: green;
+$gray: rgb(82, 82, 82);
+$white: white;
+$black: black;
+$yellow: #fec12a;
+$red: red;
+$currentColor: currentColor;
+a,
+a:focus,
+a:hover {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.nav-item {
+    margin: 0 30px 20px 0;
+}
+
+.nav1 {
+    color: $gray;
+    font-size: 22px;
+    &.active {
+        color: $green;
+        border-bottom: 1px solid $gray;
+        padding-left: 20px;
+        background: url('../img/icons/check-solid.svg') no-repeat;
+        background-size: 15px;
+        background-position: left center;
+    }
+}
+
+.nav-tab2 .nav-item {
+    padding: 0;
+    margin: 0 20px 20px 0;
+}
+
+.nav2 {
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border: 1px solid $gray;
+    color: $gray;
+    padding: 7px 25px;
+    font-size: 16px;
+    &.active {
+        color: $green;
+        border-color: $green;
+        font-weight: 600;
+    }
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+table.short tr:nth-child(n+3) {
+    display: none;
+}
+
+.thead {
+    background-color: rgba($green, $alpha: 0.1);
+    color: $green;
+    font-size: 14px;
+}
+
+.table-bordered thead th {
+    padding: 0.50rem .75rem;
+}
+
+.table-bordered thead td {
+    padding: 0.60rem .75rem;
+    vertical-align: middle;
+}
+
+td:last-of-type {
+    text-align: center;
+}
+
+.btn-table-collapse {
+    background-color: rgba($gray, 0.1);
+    font-weight: 600;
+    color: rgba($green, 0.8);
+    border-radius: 0 0 10px 10px;
+}
+
+.opacity {
+    opacity: 0.7;
+}
+
+.red {
+    color: $red;
+}
+
+.btn-yellow {
+    color: $black;
+    font-weight: 700;
+    background-color: $yellow;
+    box-shadow: 0 0.125rem 0 0 #9b6835;
+    font-size: 14px;
+    border: none;
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgba($yellow, 25%)
+    }
+}
+
+.modal-header {
+    background-color: $green;
+    color: $white;
+}
+
+.mark {
+    background-color: $yellow;
+    padding: 0.1em 0.4em;
+    line-height: 1em;
+}
+
+.ins {
+    color: $red;
+    font-weight: bold;
+}
+
+.del {
+    text-decoration: line-through;
+}
