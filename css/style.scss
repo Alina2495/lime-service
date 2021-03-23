@@ -130,17 +130,42 @@ td:last-of-type {
     }
 }
 
+.modal-price {
+    background-color: lighten($yellow, 30%);
+    border-bottom: .3125rem solid lighten($yellow, 25%);
+    border-radius: .3125rem;
+}
+
+.fs-20 {
+    font-size: 20px;
+    line-height: 1.2em;
+}
+
+.bg {
+    &-wa {
+        background-color: #25d366;
+    }
+    &-tg {
+        background-color: #0088cc;
+    }
+    &-vk {
+        background-color: #45668e;
+    }
+}
+
 .price-block .mark {
     background-color: $yellow;
     padding: 0.1em 0.4em;
     line-height: 1em;
 }
 
-.price-block .ins {
+.price-block .ins,
+#orderRemont .ins {
     color: $red;
     font-weight: bold;
 }
 
-.price-block .del {
+.price-block .del,
+#orderRemont .del {
     text-decoration: line-through;
 }
